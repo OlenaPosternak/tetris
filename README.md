@@ -1,3 +1,3 @@
-## Simple Tetris game (coming soon)
+## Simple Tetris game
 
-![image](https://github.com/OlenaPosternak/tetris/assets/101277404/aaef1a85-e00a-4196-a3c1-222413376c92)
+![image](https://github.com/OlenaPosternak/tetris/assets/101277404/743e3705-37ea-405b-b8e1-1aaeb6cbd31f)
