@@ -7,8 +7,46 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Let's play Tetris</h1>
-    <div class="grid"></div>
+    <!-- <h1>Let's play Tetris</h1> -->
+    <div class="tetris">
+      <div class="screen-wrapper">
+        <p class="name">Tetris</p>
+        <div class="tetris-screen">
+          <div class="grid"></div>
+          <div class="score">
+            <div class="scoreSection">
+              <p>Score</p>
+              <p>Timer</p>
+              <div class="time"></div>
+              <!-- <p>Game over</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="buttonsSection">
+          <div class="startsWrapper">
+            <button class="start button" onclick="startGame()">Start</button>
+            <div class="stopRestart">
+              <button class="button" onclick="stopGame()">Stop</button>
+              <button class="button" onclick="restartGame()">Restart</button>
+            </div>
+          </div>
+
+          <div class="buttonsWrapper">
+            <button class="button" onclick="rotate()">Rotate</button>
+            <div class="leftRightWrapper">
+              <button class="button" onclick="moveTetrominoLeft()">Left</button>
+              <button class="button" onclick="moveTetrominoRight()">
+                Right
+              </button>
+            </div>
+            <button class="button" onclick="moveTetrominoDown()">Down</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer">
+      Created by Olena Posternak during CyberBionic Systematics marathon
+    </p>
     <script src="./index.js"></script>
   </body>
 </html>
