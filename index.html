@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- <h1>Let's play Tetris</h1> -->
+    <div class="overlay">
+      <div class="container">
+        <p>GAME OVER</p>
+        <button class="button" onclick="restartGame()">Restart Game</button>
+      </div>
+    </div>
     <div class="tetris">
       <div class="screen-wrapper">
         <p class="name">Tetris</p>
@@ -15,10 +20,14 @@
           <div class="grid"></div>
           <div class="score">
             <div class="scoreSection">
-              <p>Score</p>
-              <p>Timer</p>
-              <div class="time"></div>
-              <!-- <p>Game over</p> -->
+              <div>
+                <p>Score</p>
+                <p class="myScore">0</p>
+              </div>
+              <div>
+                <p>Timer</p>
+                <p class="timer">00:00</p>
+              </div>
             </div>
           </div>
         </div>
@@ -26,7 +35,7 @@
           <div class="startsWrapper">
             <button class="start button" onclick="startGame()">Start</button>
             <div class="stopRestart">
-              <button class="button" onclick="stopGame()">Stop</button>
+              <button class="button" onclick="pauseGame()">Pause</button>
               <button class="button" onclick="restartGame()">Restart</button>
             </div>
           </div>
