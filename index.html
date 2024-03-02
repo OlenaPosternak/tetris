@@ -13,6 +13,41 @@
         <button class="button" onclick="restartGame()">Restart Game</button>
       </div>
     </div>
+
+    <details class="details">
+      <summary>Tetris Instruction</summary>
+      <div class="manualWrapper">
+        <h2>Controls:</h2>
+        <div>
+          <p>
+            Use arrow keys to move tetrominoes (←, →, ↓) and rotate them (↑).
+          </p>
+          <p>Press "Start" to begin.</p>
+          <p>"Pause" (Esc) halts the game; "Start" resumes.</p>
+          <p>"Restart" resets game.</p>
+        </div>
+        <h2>Starting:</h2>
+        <div>Press "Start" to begin.</div>
+        <h2>Moving Tetrominoes:</h2>
+        <div>
+          <p>Arrow keys move tetrominoes; ↑ rotates.</p>
+          <p>Tetrominoes fall until the bottom or collision.</p>
+        </div>
+        <h2>Completing Lines:</h2>
+        <p>
+          Filled horizontal lines disappear. Each line cleared earns points.
+        </p>
+        <ul>
+          <li>1 line: 10 points</li>
+          <li>2 lines: 20 points</li>
+          <li>3 lines: 50 points</li>
+          <li>4 lines (Tetris): 100 points</li>
+        </ul>
+        <h2>Game Over:</h2>
+        <p>Stack reaching the top or no space ends the game.</p>
+        <h2>Enjoy the game!</h2>
+      </div>
+    </details>
     <div class="tetris">
       <div class="screen-wrapper">
         <p class="name">Tetris</p>
@@ -53,9 +88,10 @@
         </div>
       </div>
     </div>
-    <p class="footer">
+
+    <footer class="footer">
       Created by Olena Posternak during CyberBionic Systematics marathon
-    </p>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

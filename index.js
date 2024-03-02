@@ -71,7 +71,7 @@ function generatePlayFields() {
 
   playfield = new Array(PLAYFIELD_ROWS)
     .fill()
-    .map(() => new Array(PLAYFIELD_COLUMNS).fill());
+    .map(() => new Array(PLAYFIELD_COLUMNS).fill(0));
 }
 
 function generateTetroMino() {
