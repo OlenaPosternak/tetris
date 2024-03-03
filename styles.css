@@ -18,12 +18,14 @@ body {
   left: 4vh;
   max-width: 400px;
   color: rgb(55, 53, 53);
+  cursor: pointer;
 }
 
 summary {
   font-size: 30px;
   color: rgb(55, 53, 53);
 }
+
 .manualWrapper {
   display: flex;
   flex-direction: column;

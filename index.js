@@ -207,9 +207,10 @@ document.addEventListener("keydown", onKeyDown);
 
 function onKeyDown(e) {
   switch (e.key) {
-    // case " ":
-    //   dropTetroMinoDown();
-    //   break;
+    case " ":
+      dropTetroMinoDown();
+      e.target.blur();
+      break;
     case "Escape":
       pauseGame();
       break;
@@ -333,7 +334,6 @@ function dropTetroMinoDown() {
       tetromino.row++;
       if (!isValid()) {
         tetromino.row--;
-        clearInterval(intervalId);
         break;
       }
     }
